@@ -924,6 +924,7 @@ textarea:focus {
 .btn-box {
   grid-area: submit;
   align-self: flex-end;
+  justify-self: flex-end;
 }
 
 input:focus,
