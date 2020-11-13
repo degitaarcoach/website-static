@@ -111,11 +111,29 @@
   <section class="full-width">
     
     <form class="contact-form">
-      <input type="text" class="input-name" id="input-name" placeholder="Naam" required>
-      <input type="email" class="input-email" id="input-email" placeholder="Email" required>
-      <input type="text" class="input-subject" id="input-subject" placeholder="Onderwerp">
-      <textarea name="message" type="text" class="input-message" id="input-message" placeholder="Bericht..." required></textarea>
-      <input type="submit" value="Verzenden" id="input-submit" class="btn btn-form">
+
+      <div class="name-box">
+        <label for="input-name">Naam</label>
+        <input type="text" class="input-name" id="input-name" required>
+      </div>
+
+      <div class="email-box">
+        <label for="input-email">Email</label>
+        <input type="email" class="input-email" id="input-email" required>
+      </div>
+
+      <div class="subject-box">
+        <label for="input-subject">Onderwerp</label>
+        <input type="text" class="input-subject" id="input-subject">
+      </div>
+
+      <div class="message-box">
+        <label for="input-message">Bericht</label>
+        <textarea name="message" type="text" class="input-message" id="input-message" required></textarea>
+      </div>
+      <div class="btn-box">
+        <input type="submit" value="Verzenden" id="input-submit" class="btn btn-form">
+      </div>
     </form>
 
   </section>

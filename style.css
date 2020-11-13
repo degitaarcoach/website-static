@@ -255,23 +255,18 @@ ul {
 @keyframes arrow-bounce {
   0% {
     transform: translateY(0px);
-    text-shadow: 0 12px 6px rgba(0, 0, 0, 0.09);
   }
   25% {
     transform: translateY(10px);
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
   }
   50% {
     transform: translateY(0px);
-    text-shadow: 0 12px 6px rgba(0, 0, 0, 0.09);
   }
   75% {
     transform: translateY(10px);
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
   }
   100% {
     transform: translateY(0px);
-    text-shadow: 0 12px 6px rgba(0, 0, 0, 0.09);
   }
 }
 
@@ -357,14 +352,18 @@ header {
 }
 
 .slide {
-  height: 100%;
   width: 25%;
   float: left;
-  object-fit: cover;
-  object-position: top;
+}
+
+.slide,
+.slide img {
+  height: 100%;
 }
 
 .slide img {
+  object-fit: cover;
+  object-position: top;
   width: 100%;
   z-index: 1;
   position: relative;
@@ -372,13 +371,15 @@ header {
 
 .slide-text {
   color: white;
-  padding: 1em;
+  padding: 0 1em;
+  margin: 0;
   font-size: 3rem;
   text-shadow: 4px 4px 10px black;
   z-index: 2;
   position: absolute;
-  top: calc(50% - 132px);
   width: 25%;
+  top: 50%;
+  transform: translateY(-50%);
   text-align: center;
 }
 
@@ -873,12 +874,18 @@ footer p {
   background: #fafafa;
 }
 
+.contact-form div {
+  display: flex;
+  flex-direction: column;
+}
+
 input {
   height: 3em;
 }
 
 textarea {
   resize: none;
+  height: 100%;
 }
 
 input,
@@ -888,6 +895,7 @@ textarea {
   outline: 0;
   border-radius: 8px;
   padding: 1em;
+  margin-top: 1em;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   transition: 0.2s;
 }
@@ -897,25 +905,25 @@ textarea:focus {
   box-shadow: 0 0px 2px #cc3333;
 }
 
-.input-name {
+.name-box {
   grid-area: name;
 }
 
-.input-email {
+.email-box {
   grid-area: email;
 }
 
-.input-subject {
+.subject-box {
   grid-area: subject;
 }
 
-.input-message {
+.message-box {
   grid-area: message;
 }
 
-.btn-form {
+.btn-box {
   grid-area: submit;
-  justify-self: end;
+  align-self: flex-end;
 }
 
 input:focus,

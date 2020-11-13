@@ -34,24 +34,29 @@
 
 <div class="slider-container">
   <figure class="slider">
+
     <div class="slide">
-      <img class="slide" src="images/header-carousel-1.jpg" alt="afbeelding van lesstudio">
+      <img src="images/header-carousel-1.jpg" alt="afbeelding van lesstudio">
       <h2 class="slide-text"> Aan de slag met jouw persoonlijke doel </h2>
     </div>
+
     <div class="slide">
-      <img class="slide" src="images/header-carousel-2.jpg" alt="afbeelding van docent">
+      <img src="images/header-carousel-2.jpg" alt="afbeelding van docent">
       <h2 class="slide-text"> Krijg les van een gediplomeerd docent </h2>
+    
   </div>
   <div class="slide">
-    <img class="slide" src="images/header-carousel-3.jpg" 
+    <img src="images/header-carousel-3.jpg" 
     alt="afbeelding van gitarist op podium">
     <h2 class="slide-text"> Leer je favoriete nummers </h2>
   </div>
+
   <div class="slide">
-    <img class="slide" src="images/header-carousel-4.jpg" 
+    <img src="images/header-carousel-4.jpg" 
     alt="afbeelding van piano en ukelele">
     <h2 class="slide-text"> Nu ook ukelele les en theorie aan de piano </h2>
   </div>
+  
 </figure>
 <div class="btn-row-header">
 <a class="btn slide-btn" href="#services">Meer info</a>
@@ -246,15 +251,33 @@
 
         <!-- ///////////// CONTACT FORM ///////////// -->
 
-  <h2 class="h2-style">Heb je nog vragen?</h2>
+  <h2 class="h2-style">Neem contact op</h2>
   <section class="full-width">
-    <div class="arrow-default"><i class="fas fa-angle-down arrow"></i></div>
+    
     <form class="contact-form">
-      <input type="text" class="input-name" id="input-name" placeholder="Naam" required>
-      <input type="email" class="input-email" id="input-email" placeholder="Email" required>
-      <input type="text" class="input-subject" id="input-subject" placeholder="Onderwerp">
-      <textarea name="message" type="text" class="input-message" id="input-message" placeholder="Bericht..." required></textarea>
-      <input type="submit" value="Verzenden" id="input-submit" class="btn btn-form">
+
+      <div class="name-box">
+        <label for="input-name">Naam</label>
+        <input type="text" class="input-name" id="input-name" required>
+      </div>
+
+      <div class="email-box">
+        <label for="input-email">Email</label>
+        <input type="email" class="input-email" id="input-email" required>
+      </div>
+
+      <div class="subject-box">
+        <label for="input-subject">Onderwerp</label>
+        <input type="text" class="input-subject" id="input-subject">
+      </div>
+
+      <div class="message-box">
+        <label for="input-message">Bericht</label>
+        <textarea name="message" type="text" class="input-message" id="input-message" required></textarea>
+      </div>
+      <div class="btn-box">
+        <input type="submit" value="Verzenden" id="input-submit" class="btn btn-form">
+      </div>
     </form>
 
   </section>
