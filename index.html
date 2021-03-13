@@ -359,25 +359,25 @@
 
       <h2 class="h2-style">Neem contact op</h2>
       <section class="full-width">
-        <form class="contact-form">
+        <form action="contactform.php" method="POST" class="contact-form">
           <div class="name-box">
             <label for="input-name">Naam</label>
-            <input type="text" class="input-name" id="input-name" required />
+            <input type="text" class="input-name" id="input-name" name="name" required />
           </div>
 
           <div class="email-box">
             <label for="input-email">Email</label>
-            <input type="email" class="input-email" id="input-email" required />
+            <input type="email" class="input-email" id="input-email" name="email" required />
           </div>
 
           <div class="subject-box">
             <label for="input-subject">Onderwerp</label>
-            <input type="text" class="input-subject" id="input-subject" />
+            <input type="text" class="input-subject" id="input-subject" name="subject" />
           </div>
 
           <div class="message-box">
             <label for="input-message">Bericht</label>
-            <textarea name="message" type="text" class="input-message" id="input-message" required></textarea>
+            <textarea name="message" type="text" class="input-message" id="input-message" name="message" required></textarea>
           </div>
           <div class="btn-box">
             <input type="submit" value="Verzenden" id="input-submit" class="btn btn-form" />
