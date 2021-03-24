@@ -3,13 +3,15 @@
 <?php 
   $message_sent = false;
 
-  if(isset($_POST['email']) && $_POST['email'] != '') {
-    if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+  if(isset($_POST['email!fake']) && $_POST['email!fake'] != '') {
+    if(filter_var($_POST['email!fake'], FILTER_VALIDATE_EMAIL)) {
 
-      $userName = secure_input($_POST['name']);
-      $userEmail = secure_input($_POST['email']);
+      $userName = secure_input($_POST['name!fake']);
+      $userEmail = secure_input($_POST['email!fake']);
       $subject = secure_input($_POST['subject']);
       $message = secure_input($_POST['message']);
+      $honey = $_POST['name'];
+      $pot = $_POST['email'];
     
       $to = "degitaarcoach@gmail.com";
       $body = "";
@@ -18,7 +20,13 @@
       $body .= "Email: ".$userEmail. "\r\n";
       $body .= "Message: ".$message. "\r\n";
     
-      mail($to, $subject, $body);
+      if (!empty ($honey) || !empty ($pot)) {
+        return;
+      } 
+      else 
+      {
+        mail($to, $subject, $body);
+      }
 
       $message_sent = true;
     }

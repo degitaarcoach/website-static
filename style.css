@@ -11,7 +11,7 @@
 body,
 html {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
 }
 
@@ -54,7 +54,7 @@ ul {
 }
 
 .h2-style:after {
-  content: '';
+  content: "";
   display: block;
   border-bottom: #cc3333 solid 2px;
   width: 5%;
@@ -71,7 +71,7 @@ ul {
 }
 
 .h3-style:after {
-  content: '';
+  content: "";
   display: block;
   border-bottom: #cc3333 solid 1px;
   width: 100%;
@@ -602,11 +602,11 @@ header {
 .card-proef {
   display: grid;
   grid-template-areas:
-    'head'
-    'main'
-    'main'
-    'main'
-    'button';
+    "head"
+    "main"
+    "main"
+    "main"
+    "button";
 }
 
 .card {
@@ -685,7 +685,7 @@ header {
 }
 
 .card-regular li:after {
-  content: '';
+  content: "";
   display: block;
   border-bottom: solid 1px #cc333322;
   width: 100%;
@@ -863,10 +863,10 @@ footer p {
   grid-template-columns: 1fr 2fr;
   grid-row: repeat(4, 1fr);
   grid-template-areas:
-    'name message'
-    'email message'
-    'subject message'
-    'submit submit';
+    "name message"
+    "email message"
+    "subject message"
+    "submit submit";
   gap: 1em;
   width: 100%;
   margin: 1em auto 0;
@@ -934,6 +934,16 @@ textarea:hover,
 .btn-form:hover,
 .btn-form:focus {
   transform: scale(1.02);
+}
+
+.ohnohoney {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  z-index: -1;
 }
 
 /* ----------------
