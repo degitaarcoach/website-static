@@ -22,26 +22,38 @@ function ShowMenu() {
 
 hamburger.addEventListener("click", ShowMenu);
 close.addEventListener("click", HideMenu);
-// REVIEWS
 
-const pauseBtn = document.querySelector(".pause-button");
-const startBtn = document.querySelector(".start-button");
-const reviews = document.querySelector(".reviews");
+// FLIP CARD
 
-function togglePlayAndPause() {
-  reviews.classList.toggle("pause");
-  pauseBtn.classList.toggle("hide");
-  startBtn.classList.toggle("hide");
+const flipCard = document.querySelectorAll(".flip-card");
+const flipCardInner = document.querySelectorAll(".flip-card-inner");
+const flipCardBack = document.querySelectorAll(".flip-card-back");
+
+let flipped = [false, false, false, false];
+
+function cardFlipCheck(index) {
+  if (!flipped[index]) {
+    flipCardInner[index].style.transform = "rotateY(180deg)";
+    flipped[index] = true;
+  } else {
+    flipCardInner[index].style.transform = "rotateY(0deg)";
+    flipped[index] = false;
+  }
 }
 
-pauseBtn.addEventListener("click", togglePlayAndPause);
-startBtn.addEventListener("click", togglePlayAndPause);
+flipCard.forEach((card, index) => {
+  card.addEventListener("click", () => cardFlipCheck(index));
+});
 
-// INSCHRIJVEN
+flipCard.forEach((card, index) => {
+  card.addEventListener("mouseenter", () => cardFlipCheck(index));
+});
 
-const intro1 = document.querySelector("#");
-const intro2 = document.querySelector("#");
-
-const regular1 = document.querySelector("#");
-const regular2 = document.querySelector("#");
-const regular3 = document.querySelector("#");
+flipCard.forEach((card, index) => {
+  card.addEventListener("mouseleave", () => {
+    if (flipped[index]) {
+      flipCardInner[index].style.transform = "rotateY(0deg)";
+      flipped[index] = false;
+    }
+  });
+});

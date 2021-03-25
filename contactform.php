@@ -46,10 +46,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/Favicon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css?v=2" />
+    <link rel="stylesheet" href="media-queries.css?v=2" />
     <title>Bedankt voor je bericht!</title>
   </head>
   <body>
-    <h1>Bedankt voor je mail</h1>
-    <a href="index.html">Ga Terug</a>
+    <div class="screen">
+      <div class="go-back-container">
+        <h1>Bedankt voor je mail</h1>
+        <h3>Je bericht is veilig aangekomen!</h3>
+        <a class="btn" href="index.html">Ga Terug</a>
+      </div>
+    </div>
   </body>
   </html>

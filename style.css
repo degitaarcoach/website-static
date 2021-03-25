@@ -829,7 +829,7 @@ footer p {
 }
 
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+  cursor: pointer;
 }
 
 .flip-card-front,
@@ -903,6 +903,12 @@ textarea {
 input:focus,
 textarea:focus {
   box-shadow: 0 0px 2px #cc3333;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .name-box {
@@ -1066,4 +1072,28 @@ textarea:hover,
 
 .btn-proefpakket {
   margin: 0;
+}
+
+/* ----------------
+|     GO BACK     |
+ ---------------- */
+
+.screen {
+  position: relative;
+  height: 100vh;
+}
+.go-back-container {
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 20px;
+  background-color: #f7f4f4;
+  padding: 6em;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.125);
+}
+.go-back-container a {
+  margin-top: 1.25em;
 }

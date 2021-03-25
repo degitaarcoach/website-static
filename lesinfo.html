@@ -1,52 +1,58 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>De GitaarCoach | LES INFO</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>De GitaarCoach | LES INFO</title>
 
-  <link rel="icon" type="image/png" href="images/Favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="media-queries.css">
-  <script src="https://kit.fontawesome.com/2fcb0a73e6.js" crossorigin="anonymous"></script>
-  
-</head>
+    <link rel="icon" type="image/png" href="images/Favicon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet" />
 
-<body>
-  
-  <header>
-    <a href="index.html"><img class="site-logo" src="images/Logo-White.png" alt="Logo De GitaarCoach"></a>
-  <nav class="nav">
-    <div class="nav-btn hamburger"><i class="fas fa-bars"></i></div>
-      <div class="nav-btn hide close"><i class="fas fa-times"></i></div>
-      <ul class="nav__list">
-          <li class="nav__item hide"><a href="index.html" class="nav__link">Home</a></li>
-          <li class="nav__item hide"><a href="docent.html" class="nav__link">Docent</a></li>
-          <li class="nav__item hide"><a href="lesinfo.html" class="nav__link active">Les info</a></li>
-          <li class="nav__item hide"><a href="contact.html" class="nav__link">Contact</a></li>
-      </ul>
-  </nav>
-</header>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-queries.css" />
+    <script src="https://kit.fontawesome.com/2fcb0a73e6.js" crossorigin="anonymous"></script>
+  </head>
 
-<div class="medium-space"></div>
+  <body>
+    <header>
+      <a href="index.html"><img class="site-logo" src="images/Logo-White.png" alt="Logo De GitaarCoach" /></a>
+      <nav class="nav">
+        <div class="nav-btn hamburger"><i class="fas fa-bars"></i></div>
+        <div class="nav-btn hide close"><i class="fas fa-times"></i></div>
+        <ul class="nav__list">
+          <li class="nav__item hide">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item hide">
+            <a href="docent.html" class="nav__link">Docent</a>
+          </li>
+          <li class="nav__item hide">
+            <a href="lesinfo.html" class="nav__link active">Les info</a>
+          </li>
+          <li class="nav__item hide">
+            <a href="contact.html" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<main>
+    <div class="medium-space"></div>
 
+    <main>
       <!-- ///////////// INTRODUCTIE PAKKETTEN ///////////// -->
       <h2 class="h2-style">Introductie Pakketten</h2>
       <h3 class="h3-style">Alleen voor nieuwe leerlingen</h3>
-      <div class="arrows-introduction-cards"><i class="fas fa-angle-down arrow"></i><i class="fas fa-angle-down arrow"></i></div>
+      <div class="arrows-introduction-cards">
+        <i class="fas fa-angle-down arrow"></i><i class="fas fa-angle-down arrow"></i>
+      </div>
       <section class="medium-width lesson-cards">
-
         <div class="card card-proef">
           <h3>Gratis Proefles</h3>
           <ul>
             <li>1 les van 30 minuten</li>
             <li>Geheel vrijblijvend!</li>
           </ul>
-          <a class="btn card-btn" href="#">Inschrijven</a>
+          <a class="btn card-btn" href="contact.html#contact-form">Inschrijven</a>
         </div>
 
         <div class="card card-proef">
@@ -56,15 +62,13 @@
             <li>Ook leuk om <strong>cadeau</strong> te doen</li>
             <li>Gratis E-book</li>
           </ul>
-          <a class="btn card-btn" href="#">Inschrijven</a>
+          <a class="btn card-btn" href="contact.html#contact-form">Inschrijven</a>
         </div>
-
       </section>
 
       <!-- ///////////// REGULIERE PAKKETTEN ///////////// -->
       <h2 class="h2-style">Reguliere Pakketten</h2>
       <section class="medium-width lesson-cards">
-
         <div class="card card-regular">
           <h3>Voordeelpakket 1</h3>
           <ul>
@@ -76,7 +80,7 @@
             <li>Gratis E-book</li>
           </ul>
           <p class="price"><span>vanaf</span> €17,50 per les</p>
-          <a class="btn card-btn" href="#">Inschrijven</a>
+          <a class="btn card-btn" href="contact.html#contact-form">Inschrijven</a>
         </div>
 
         <div class="card card-regular">
@@ -90,7 +94,7 @@
             <li>Gratis E-book</li>
           </ul>
           <p class="price"><span>vanaf</span> €18,75 per les</p>
-          <a class="btn card-btn" href="#">Inschrijven</a>
+          <a class="btn card-btn" href="contact.html#contact-form">Inschrijven</a>
         </div>
 
         <div class="card card-regular">
@@ -104,53 +108,70 @@
             <li>Gratis E-book</li>
           </ul>
           <p class="price"><span>vanaf</span> €20,00 per les</p>
-          <a class="btn card-btn" href="#">Inschrijven</a>
+          <a class="btn card-btn" href="contact.html#contact-form">Inschrijven</a>
         </div>
-
       </section>
 
-        <section class="medium-width lesinfo-section">
+      <section class="medium-width lesinfo-section">
+        <div class="rooster-container">
+          <h3 class="h3-style">Rooster 2020-2021</h3>
+          <iframe
+            class="rooster"
+            src="images/Rooster-2020-2021.pdf"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
 
-          <div class="rooster-container">
-            <h3 class="h3-style">Rooster 2020-2021</h3>
-            <iframe class="rooster" src="images/Rooster-2020-2021.pdf" width="100%" height="100%" frameborder="0" allowfullscreen>
-            </iframe>
-          </div>
+        <div class="voorwaarden-container">
+          <h3 class="h3-style">Algemene Voorwaarden 2020-2021</h3>
+          <iframe
+            class="voorwaarden"
+            src="images/Algemene-Voorwaarden-2020-2021.pdf"
+            width="100%"
+            height="100%"
+            frameborder="0"
+          >
+          </iframe>
+        </div>
+      </section>
+    </main>
 
-          <div class="voorwaarden-container">
-            <h3 class="h3-style">Algemene Voorwaarden 2020-2021</h3>
-            <iframe class="voorwaarden" src="images/Algemene-Voorwaarden-2020-2021.pdf" width="100%" height="100%" frameborder="0">
-            </iframe>
-          </div>
+    <footer>
+      <ul class="tel">
+        <li>T: 06-41244183</li>
+        <li>KVK: 69431833</li>
+      </ul>
 
+      <ul class="footer-icons">
+        <li>
+          <a href="https://www.facebook.com/DeGitaarCoachApeldoorn" target="_blank"
+            ><i class="fab fa-facebook-square footer-icon"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://nl.linkedin.com/in/corn%C3%A9-van-der-geer-5b85a6147" target="_blank"
+            ><i class="fab fa-linkedin footer-icon"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCeFGm-ORxhbjDw6wfRM8bZA" target="_blank"
+            ><i class="fab fa-youtube footer-icon"></i
+          ></a>
+        </li>
+      </ul>
 
-        </section>
-  
-</main>
-  
-<footer>
+      <ul class="adres">
+        <li>De Cloese 122</li>
+        <li>7339 CR Ugchelen</li>
+      </ul>
 
-  <ul class="tel">
-    <li>T: 06-41244183</li>
-    <li>KVK: 69431833</li>
-  </ul>
+      <p class="copyright">© De GitaarCoach 2021 - Gitaarles Apeldoorn</p>
+    </footer>
 
-  <ul class="footer-icons">
-    <li><a href="#"><i class="fab fa-facebook-square footer-icon"></i></a></li>
-    <li><a href="#"><i class="fab fa-linkedin footer-icon"></i></a></li>
-    <li><a href="#"><i class="fab fa-youtube footer-icon"></i></a></li>
-  </ul>
-
-  <ul class="adres">
-    <li>De Cloese 122</li>
-    <li>7339 CR Ugchelen</li>
-  </ul>
-
-  <p class="copyright">© De GitaarCoach 2020 - Gitaarles Apeldoorn</p>
-  
-
-</footer>
-
-  <script src="index.js"></script>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
