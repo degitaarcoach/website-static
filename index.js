@@ -33,9 +33,11 @@ let flipped = [false, false, false, false];
 
 function cardFlipCheck(index) {
   if (!flipped[index]) {
+    console.log(flipped);
     flipCardInner[index].style.transform = "rotateY(180deg)";
     flipped[index] = true;
   } else {
+    console.log(flipped);
     flipCardInner[index].style.transform = "rotateY(0deg)";
     flipped[index] = false;
   }
@@ -45,15 +47,17 @@ flipCard.forEach((card, index) => {
   card.addEventListener("click", () => cardFlipCheck(index));
 });
 
-flipCard.forEach((card, index) => {
-  card.addEventListener("mouseenter", () => cardFlipCheck(index));
-});
-
-flipCard.forEach((card, index) => {
-  card.addEventListener("mouseleave", () => {
-    if (flipped[index]) {
-      flipCardInner[index].style.transform = "rotateY(0deg)";
-      flipped[index] = false;
-    }
+if (window.innerWidth >= 900) {
+  flipCard.forEach((card, index) => {
+    card.addEventListener("mouseenter", () => cardFlipCheck(index));
   });
-});
+
+  flipCard.forEach((card, index) => {
+    card.addEventListener("mouseleave", () => {
+      if (flipped[index]) {
+        flipCardInner[index].style.transform = "rotateY(0deg)";
+        flipped[index] = false;
+      }
+    });
+  });
+}
