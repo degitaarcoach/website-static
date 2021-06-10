@@ -1,0 +1,44 @@
+.h2-style {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.h2-style:after {
+  content: "";
+  display: block;
+  border-bottom: #cc3333 solid 2px;
+  width: 5%;
+  margin: 10px auto 1em;
+}
+
+.h3-style {
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+  display: grid;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.h3-style:after {
+  content: "";
+  display: block;
+  border-bottom: #cc3333 solid 1px;
+  width: 100%;
+  margin: 0 auto 0;
+}
+
+.medium-space {
+  margin-bottom: 10em;
+  padding: 1px;
+}
+
+.medium-width {
+  margin: 0 auto 10em;
+  max-width: 1024px;
+}
+
+.full-width {
+  margin-bottom: 0;
+  max-width: 100vw;
+}

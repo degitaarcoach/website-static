@@ -1,0 +1,14 @@
+.arrow {
+  color: #ccc;
+  opacity: 0.5;
+  font-size: 2rem;
+  animation: 4s arrow-bounce ease-in-out infinite both;
+  width: 100%;
+}
+
+.arrow-default {
+  max-width: 1024px;
+  padding: 0 1em;
+  margin: 0 auto;
+  text-align: center;
+}

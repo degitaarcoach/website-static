@@ -1,0 +1,91 @@
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-row: repeat(4, 1fr);
+  grid-template-areas:
+    "name message"
+    "email message"
+    "subject message"
+    "submit submit";
+  gap: 1em;
+  width: 100%;
+  margin: 1em auto 0;
+  padding: 5% 20%;
+  background: #fafafa;
+}
+
+.contact-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  height: 3em;
+}
+
+textarea {
+  resize: none;
+  height: 100%;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  border: 0;
+  outline: 0;
+  border-radius: 8px;
+  padding: 1em;
+  margin-top: 1em;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0px 2px #cc3333;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.name-box {
+  grid-area: name;
+}
+
+.email-box {
+  grid-area: email;
+}
+
+.subject-box {
+  grid-area: subject;
+}
+
+.message-box {
+  grid-area: message;
+}
+
+.btn-box {
+  grid-area: submit;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+input:not([type="submit"]):focus,
+input:not([type="submit"]):hover,
+textarea:focus,
+textarea:hover {
+  transform: scale(1.01);
+}
+
+.ohnohoney {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  z-index: -1;
+}

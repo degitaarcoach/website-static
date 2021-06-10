@@ -1,0 +1,84 @@
+.arrows-introduction-cards {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 1em;
+  column-gap: 2em;
+}
+
+.arrows-introduction-cards .arrow {
+  width: 400px;
+  text-align: center;
+}
+
+.lesson-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-proef {
+  display: grid;
+  grid-template-areas:
+    "head"
+    "main"
+    "main"
+    "main"
+    "button";
+}
+
+.card {
+  background-color: #fafafa;
+  padding: 1em;
+  margin: 1em;
+  width: 400px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.125);
+  transform: scale(1);
+  transition: all, 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25);
+}
+
+.card h3 {
+  text-transform: uppercase;
+  align-self: center;
+  justify-self: center;
+  grid-area: head;
+  padding: 0.7em;
+  border-bottom: solid 2px #cc333322;
+  margin-bottom: 2em;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 11px 11px 0 0;
+}
+
+.card span {
+  font-size: 0.7em;
+  text-transform: lowercase;
+  font-style: italic;
+  font-weight: normal;
+  padding-right: 2px;
+}
+
+.card ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  grid-area: main;
+}
+
+.card li {
+  line-height: 2em;
+}
+
+.card-btn {
+  margin: 1em;
+  justify-self: center;
+  align-self: end;
+  grid-area: button;
+}

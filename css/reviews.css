@@ -1,0 +1,88 @@
+.reviews-container {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  background-color: #fafafa;
+  padding: 2em;
+  margin-bottom: 8em;
+}
+
+.reviews {
+  position: relative;
+  width: 600%;
+  margin: 0;
+  left: 0;
+}
+
+.review {
+  height: 100%;
+  width: calc(100% / 6);
+  float: left;
+  padding: 1em;
+}
+
+.review-text {
+  max-width: 1024px;
+  width: 90%;
+  padding: 1em;
+  margin: 0 auto 1em;
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.review-image {
+  height: 6em;
+  margin: 0 0 1em;
+  border-radius: 100%;
+  border: solid 2px #fff;
+}
+
+.review-author {
+  color: #cc3333;
+  font-weight: lighter;
+  margin: 0 1em 0.3em;
+}
+
+.review-author-description {
+  margin: 0;
+  color: #777;
+  font-size: 0.9rem;
+  margin: 0 1em 0;
+}
+
+.pause-button,
+.start-button {
+  border: unset;
+  background-color: unset;
+  font-size: 2rem;
+  opacity: 0.5;
+  padding: 3px;
+  margin: 0;
+  transition: opacity 0.2s, transform 0.1s;
+  transform: scale(1);
+}
+
+.pause-button:hover,
+.start-button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.pause-button:focus,
+.start-button:focus {
+  outline: 0;
+}
+
+.pause-button:active,
+.start-button:active {
+  transform: scale(1.1);
+}
+
+.running {
+  animation: 40s slider-reviews ease-in-out infinite;
+}
+
+.pause {
+  animation-play-state: paused;
+}

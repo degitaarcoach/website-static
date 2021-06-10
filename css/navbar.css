@@ -1,0 +1,56 @@
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #121212;
+  align-items: end;
+  padding: 1em;
+  height: max-content;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.site-logo {
+  max-height: 100px;
+}
+
+.hamburger,
+.close {
+  visibility: hidden;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  text-transform: uppercase;
+  border-bottom: 2px solid #121212;
+  transition: all, 0.4s;
+}
+
+.nav__link:link,
+.nav__link:visited {
+  color: #fff;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  color: #cc3333;
+  border-bottom: 2px solid #cc3333;
+}
+
+.nav__link.active {
+  color: #515151;
+  border-bottom: 2px solid #cc3333;
+  cursor: default;
+}

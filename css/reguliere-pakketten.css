@@ -1,0 +1,36 @@
+.card-regular ul {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 11px;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.card-regular li span {
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.card-regular li:after {
+  content: "";
+  display: block;
+  border-bottom: solid 1px #cc333322;
+  width: 100%;
+  margin: 0 auto 0.7em;
+}
+
+.card-regular li:nth-last-child(1):after {
+  border-bottom: none;
+}
+
+.card-regular li:first-child {
+  font-weight: bold;
+  margin-top: 0.7em;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,397 @@
+@media (max-width: 1023px) {
+  .arrow-promo {
+    display: none;
+  }
+
+  .arrows-introduction-cards,
+  .lesson-cards {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .lesinfo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rooster,
+  .voorwaarden {
+    min-height: 600px;
+    min-width: 85vw;
+  }
+}
+
+@media (max-width: 870px) {
+  html {
+    scroll-padding-top: 310px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.125rem;
+  }
+
+  .medium-space,
+  .medium-width {
+    margin-bottom: 8em;
+  }
+
+  .slider {
+    height: calc(75vh - 132px);
+  }
+
+  .arrows-introduction-cards .arrow,
+  .card {
+    width: 350px;
+  }
+
+  .docent-top img {
+    border-radius: 50%;
+    width: 65%;
+  }
+}
+
+@media (min-width: 776px) {
+  .nav__item {
+    display: unset;
+  }
+}
+
+@media (max-width: 775px) {
+  :root {
+    font-size: 0.875rem;
+  }
+
+  html {
+    scroll-padding-top: 315px;
+  }
+
+  .medium-space,
+  .medium-width {
+    margin-bottom: 6em;
+  }
+
+  header {
+    padding: 1em 3em;
+    align-items: start;
+  }
+
+  .site-logo {
+    align-self: start;
+  }
+  .hamburger,
+  .close {
+    visibility: unset;
+    align-self: start;
+  }
+
+  .hamburger,
+  .close {
+    cursor: pointer;
+    align-self: flex-end;
+    font-size: 2.2rem;
+    color: #fff;
+    transition: 0.2s;
+  }
+
+  .hamburger:hover,
+  .hamburger:focus,
+  .hamburger:active,
+  .close:hover,
+  .close:focus,
+  .close:active {
+    color: #cc3333;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 1.2rem;
+    line-height: 2.3;
+  }
+
+  .slider {
+    height: calc(75vh - 128px);
+  }
+
+  .arrows-introduction-cards .arrow,
+  .card {
+    width: 300px;
+  }
+
+  .container-accessibility {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0 4em;
+  }
+
+  .flip-card {
+    font-size: 1.2rem;
+  }
+
+  .flip-card h3 {
+    font-size: 1.5rem;
+  }
+  .flip-card i {
+    font-size: 3.5rem;
+  }
+
+  footer p {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 720px) {
+  .btn-row-docent a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .medium-space,
+  .medium-width {
+    margin-bottom: 5em;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+    width: 80%;
+  }
+
+  .promo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promo-video,
+  .promo-description {
+    width: 80%;
+  }
+
+  .promo-video {
+    height: 250px;
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+
+  .arrows-introduction-cards .arrow,
+  .card {
+    width: 275px;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+  }
+
+  textarea {
+    height: 200px;
+  }
+
+  .docent-biography-story {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4em;
+    width: 80%;
+  }
+
+  .video-block iframe {
+    height: 250px;
+  }
+
+  .block-1 {
+    order: 1;
+  }
+  .block-2 {
+    order: 2;
+  }
+  .block-3 {
+    order: 3;
+  }
+  .block-4 {
+    order: 4;
+  }
+  .block-5 {
+    order: 5;
+  }
+  .block-6 {
+    order: 6;
+  }
+}
+
+@media (max-width: 605px) {
+  .medium-space,
+  .medium-width {
+    margin-bottom: 4em;
+  }
+
+  header {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .nav-btn {
+    align-self: center;
+  }
+
+  .nav__list {
+    align-items: center;
+    line-height: 3;
+    font-size: 1.3rem;
+  }
+
+  .arrows-introduction-cards .arrow {
+    display: none;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .flip-card {
+    font-size: 1.1rem;
+  }
+
+  .flip-card h3 {
+    font-size: 1.3rem;
+  }
+  .flip-card i {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .docent-top img {
+    width: 75%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-icons {
+    order: 1;
+    margin-bottom: 1em;
+  }
+
+  .adres {
+    order: 2;
+    margin-bottom: 1.5em;
+  }
+
+  .tel {
+    order: 3;
+    margin-bottom: 1.5em;
+  }
+
+  .copyright {
+    order: 4;
+  }
+}
+
+@media (max-width: 550px) {
+  .docent-top h1 {
+    font-size: 2.65rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .docent-top h1 {
+    font-size: 2rem;
+  }
+
+  .map-accessibility {
+    height: 400px;
+  }
+  .cards-accessibility {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    max-height: 800px;
+    margin-top: -200px;
+  }
+
+  .flip-card {
+    height: 200px;
+  }
+
+  .flip-card {
+    font-size: 1.2rem;
+  }
+
+  .flip-card h3 {
+    font-size: 1.5rem;
+  }
+  .flip-card i {
+    font-size: 3.7rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .docent-top h1 {
+    font-size: 1.8rem;
+  }
+
+  .btn-row-docent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-proefles {
+    margin: 0 0 0.5em 0;
+  }
+
+  .story-block h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 385px) {
+  .docent-top h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 500px) and (max-height: 800px) {
+  .map-accessibility {
+    height: 300px;
+  }
+
+  .review-text {
+    font-size: 0.9rem;
+  }
+  .cards-accessibility {
+    margin-top: -250px;
+  }
+  .site-logo {
+    height: 75px;
+    margin-bottom: 1em;
+  }
+  .slider {
+    display: none;
+  }
+
+  .docent-top img {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* GALAXY FOLD */
+@media (max-width: 300px) and (max-height: 680px) {
+  :root {
+    font-size: 0.75rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}

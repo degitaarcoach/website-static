@@ -1,0 +1,25 @@
+.btn {
+  background-color: #cc3333;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0.5em 1.3em;
+  margin: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all, 0.3s;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.125);
+  outline: none;
+  border: none;
+}
+
+.btn:hover,
+.btn:focus {
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25);
+  outline: none;
+  background-color: #5a2525;
+}

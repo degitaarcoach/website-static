@@ -50,7 +50,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="style.css?v=2" />
-    <link rel="stylesheet" href="media-queries.css?v=2" />
+    <link rel="stylesheet" href="media-queries/media-queries.css?v=2" />
     <title>Bedankt voor je bericht!</title>
   </head>
   <body>

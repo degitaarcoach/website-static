@@ -1,0 +1,25 @@
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  padding: 1em;
+  text-align: center;
+}
+
+.service {
+  border-radius: 20px;
+  background-color: #fefefe;
+  padding: 0.5em;
+  transform: scale(1);
+  transition: all, 0.4s;
+}
+
+.service:hover {
+  transform: scale(1.025);
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.05);
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: #cc3333;
+}

@@ -1,0 +1,89 @@
+.container-accessibility {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  margin: 1em;
+}
+
+.map-accessibility {
+  padding: 0;
+}
+
+.map {
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  min-height: fit-content;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.125);
+}
+
+.cards-accessibility {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1em;
+  text-align: center;
+  min-height: 400px;
+}
+
+.card-accessibility {
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  border-radius: 15px;
+  height: 200px;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.125);
+}
+
+.card-accessibility h3 {
+  padding: 0;
+  margin: 1.4em 0 0;
+  text-transform: uppercase;
+}
+
+.card-accessibility i {
+  font-size: 2.8rem;
+  align-self: start;
+  padding-top: 40px;
+}
+
+/* FLIP CARD ANIMATION ON HOVER */
+
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  cursor: pointer;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  background-color: #fafafa;
+  border-radius: 15px;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  text-align: left;
+  padding: 0 1em;
+}
+
+.flip-card-back a:link,
+.flip-card-back a:visited {
+  color: #cc3333;
+}
